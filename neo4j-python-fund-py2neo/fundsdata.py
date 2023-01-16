@@ -22,6 +22,9 @@ data_table = pd.DataFrame(js)
 print(len(data_table))
 print(data_table.values[1][0])
 
+#导出excel
+data_table.to_excel('./Funds.xlsx',index = False)    
+
 """建立连接"""
 #link = Graph("http://127.0.0.1//:7474", username="xxx", password="xxx")
 link = Graph(password="stick-cliff-fossil-float-leopard-5502")
@@ -41,7 +44,7 @@ for row in data_table.itertuples():
         node_type=Node("类型",name =row[4]) 
 
     #node_type=Node("类型",name =row[4]) 
-    node_lpy=Node("拼音",name =row[5]) 
+    node_lpy=Node("全拼",name =row[5]) 
 
     graph.create(node_code)
     graph.create(node_py)
@@ -55,9 +58,7 @@ for row in data_table.itertuples():
     graph.create(r2)
     r3 = Relationship(node_name,'类型',node_type)
     graph.create(r3)
-    r4 = Relationship(node_name,'拼音',node_lpy)
+    r4 = Relationship(node_name,'全拼',node_lpy)
     graph.create(r4)
 
     #print(row[3])
-#导出excel
-#data_table.to_excel('./Funds.xlsx',index = False)    

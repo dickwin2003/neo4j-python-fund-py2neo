@@ -33,9 +33,11 @@ for i in range(100000):
         node3 = matcher.match("现费率").where(name=printme('fund_Rate=')).first()
         if node3 is None:
             node3=Node("现费率",name =printme('fund_Rate=')) 
+
         node4 = matcher.match("最小申购金额").where(name=printme('fund_minsg=')).first()
         if node4 is None:
             node4=Node("最小申购金额",name =printme('fund_minsg=')) 
+            
         node5 = matcher.match("近一年收益率").where(name=printme('syl_1n=')).first()
         if node5 is None:
             node5=Node("近一年收益率",name =printme('syl_1n='))  
