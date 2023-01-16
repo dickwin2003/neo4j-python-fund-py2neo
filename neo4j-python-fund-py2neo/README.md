@@ -1,10 +1,9 @@
 1.neo4j的下载安装
-
-社区版下载:
+社区版下载
 https://neo4j.com/download-center/#community
-
 开发文档：
 https://neo4j.com/docs/cypher-manual/current/clauses/match/
+
 启动命令
 neo4j.bat console
 开始启动会有个设置密码的环节
@@ -14,18 +13,23 @@ pip install py2neo
 
 pip install -r requirements.txt
 
-即可
-py2neo的简单使用
+
+py2neo的简单使用:
 https://www.cnblogs.com/edkong/p/16167542.html
+
 py2neo官方文档：
 https://py2neo.org/v5/matching.html#relationship-matching
 
 3.如何获得基金的数据以及选择
+
 tushare:http://tushare.org/macro.html#id5
+
 baostock:http://baostock.com/baostock/index.php/%E9%A6%96%E9%A1%B5
 
 基金数据：
+
 http://fund.eastmoney.com/js/fundcode_search.js
+
 基金详情：
 https://fund.eastmoney.com/pingzhongdata/980003.js
 
