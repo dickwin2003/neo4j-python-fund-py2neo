@@ -1,0 +1,1 @@
+from dataToNeo4jClass.DataToNeo4jClass import DataToNeo4j
